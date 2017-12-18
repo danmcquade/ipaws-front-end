@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
-import logo from '../logo.svg'
+import {
+  Link,
+  Redirect,
+  Route,
+  Switch
+} from 'react-router-dom'
 import './App.css'
+import About from '../About/About.js'
 import Main from '../Main/Main.js'
 import Nav from '../Nav/Nav.js'
 import Footer from '../Footer/Footer.js'
@@ -9,15 +15,23 @@ class App extends Component {
   render () {
     return (
       <div className='App'>
-        <header className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <h1 className='App-title'>Welcome to React</h1>
-        </header>
-        <p className='App-intro'>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         <Nav />
-        <Main />
+        <main>
+          <Switch>
+            <Route exact path='/' render={() => (
+              <Main />
+            )} />
+            <Route exact path='/About' render={() => (
+              <About />
+            )} />
+            <Route
+              path='/*'
+              render={() => (
+                <Redirect to='/' />
+              )}
+            />
+          </Switch>
+        </main>
         <Footer />
       </div>
     )
