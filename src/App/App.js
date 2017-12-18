@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 import './App.css'
 import About from '../About/About.js'
+import AllDogs from '../AllDogs/AllDogs.js'
 import Main from '../Main/Main.js'
 import Resources from '../Resources/Resources.js'
 import Nav from '../Nav/Nav.js'
@@ -24,6 +25,9 @@ class App extends Component {
             )} />
             <Route exact path='/About' render={() => (
               <About />
+            )} />
+            <Route exact path='/dogs' render={() => (
+              <AllDogs />
             )} />
             <Route exact path='/Resources' render={() => (
               <Resources />

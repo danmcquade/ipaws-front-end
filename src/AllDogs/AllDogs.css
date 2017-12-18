@@ -1,0 +1,12 @@
+.all-dogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 85%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.all-dogs img {
+  max-width: 300px;
+}

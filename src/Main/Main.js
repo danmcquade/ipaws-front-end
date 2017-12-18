@@ -15,11 +15,12 @@ class Main extends Component {
   componentWillMount () {
     axios
     .get('http://localhost:3001/api/dogs')
-    .then(response =>
-    this.setState({
-      dogs: response.data
+    .then(response => {
+      let theDogs = response.data.slice(0, 3)
+      this.setState({
+        dogs: theDogs
+      })
     })
-    )
     .catch(err => console.log(err))
   }
 
