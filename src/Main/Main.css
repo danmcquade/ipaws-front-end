@@ -1,0 +1,22 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.mission-statement {
+  font-size: 16px;
+  text-align: left;
+}
+
+.main-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.main-gallery img {
+  max-width: 300px;
+}
