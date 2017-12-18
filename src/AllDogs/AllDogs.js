@@ -21,13 +21,14 @@ class AllDogs extends Component {
     )
     .catch(err => console.log(err))
   }
+
   render () {
     const dogs = this.state.dogs.map((dog, index) => {
       let url = '/dogs/' + dog._id
       return (
         <div className='dog-detail' key={index}>
           <Link to={url}><h3>{dog.name}</h3>
-          <img src={dog.photo} alt={dog.name} />
+            <img src={dog.photo} alt={dog.name} />
           </Link>
         </div>
       )

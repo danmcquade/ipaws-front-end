@@ -9,8 +9,9 @@ import './App.css'
 import About from '../About/About.js'
 import AllDogs from '../AllDogs/AllDogs.js'
 import Main from '../Main/Main.js'
-import Resources from '../Resources/Resources.js'
 import Nav from '../Nav/Nav.js'
+import Resources from '../Resources/Resources.js'
+import ShowDog from '../ShowDog/ShowDog.js'
 import Footer from '../Footer/Footer.js'
 
 class App extends Component {
@@ -23,13 +24,16 @@ class App extends Component {
             <Route exact path='/' render={() => (
               <Main />
             )} />
-            <Route exact path='/About' render={() => (
+            <Route exact path='/about' render={() => (
               <About />
             )} />
             <Route exact path='/dogs' render={() => (
               <AllDogs />
             )} />
-            <Route exact path='/Resources' render={() => (
+            <Route path='/dogs/:id' render={(props) => (
+              <ShowDog {...props} />
+            )} />
+            <Route exact path='/resources' render={() => (
               <Resources />
             )} />
             <Route

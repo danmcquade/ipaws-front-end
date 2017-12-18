@@ -6,7 +6,7 @@ class Nav extends Component {
 	render() {
 		return (
 			<nav>
-				<Link to="/about" class="push-left">
+				<Link to="/" className="push-left">
 					iPwas
 				</Link>
 				<Link to="/dogs">Dogs</Link>
