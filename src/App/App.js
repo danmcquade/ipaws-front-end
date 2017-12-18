@@ -8,6 +8,7 @@ import {
 import './App.css'
 import About from '../About/About.js'
 import Main from '../Main/Main.js'
+import Resources from '../Resources/Resources.js'
 import Nav from '../Nav/Nav.js'
 import Footer from '../Footer/Footer.js'
 
@@ -23,6 +24,9 @@ class App extends Component {
             )} />
             <Route exact path='/About' render={() => (
               <About />
+            )} />
+            <Route exact path='/Resources' render={() => (
+              <Resources />
             )} />
             <Route
               path='/*'
