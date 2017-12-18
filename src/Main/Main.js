@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Nav from '../Nav/Nav.js'
-import Slider from '../Slider/Slider.js'
+import MainSlider from '../Slider/Slider.js'
 import Gallery from '../Gallery/Gallery.js'
 import Footer from '../Footer/Footer.js'
 
@@ -27,6 +27,7 @@ class Main extends Component {
 	render() {
 	return (
 	<div>
+		<MainSlider />
 		<Gallery dogs={this.state.dogs}/>
 	</div>
 	)
