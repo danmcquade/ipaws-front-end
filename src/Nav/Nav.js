@@ -1,9 +1,18 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom' 
 
 class Nav extends Component {
   render () {
     return (
-      <h1>Nav</h1>
+      <nav>
+      <ul>
+      <li> <Link to='/dogs'>Dogs</Link></li>
+      <li> <Link to='/about'>About</Link></li>
+      <li> <Link to='/resources'>Resources</Link></li>
+      <li> <Link to='/contact'>Contact</Link></li>
+
+      </ul>
+      </nav>
     )
   }
 }
