@@ -16,55 +16,56 @@ color: black;
 .text-first {
   color: #5a5c60;
   font-size: 23px;
+  margin: 10px 5px 0 0;
 }
 
 .text-second {
   color: red;
   font-size: 23px;
-
-
+  margin: 10px 5px 0 0;
 
 }
 
 .text-third {
-  color: grey;
+  color: #5a5c60;
   font-size: 23px;
-
-
-
+  margin: 10px 5px 0 0;
 }
 
 .text-forth {
-  color: grey;
+  color: #5a5c60;
   font-size: 23px;
-
-
+  margin: 10px 5px 0 0;
 
 }
 .text-fifth {
   color: red;
   font-size: 23px;
-
-
+  margin: 10px 5px 0 0;
 
 }
+
 .text-sixth {
   color: red;
   font-size: 23px;
+  margin: 10px 5px 0 0;
 }
 
   .text-seventh {
     color: red;
     font-size: 23px;
+    margin: 10px 5px 0 0;
 
   }
   .text-eigth {
-    color: grey;
+    color: #5a5c60;
     font-size: 23px;
+    margin: 10px 5px 0 0;
   }
 
     .text-ninth {
-      color: grey;
+      color: #5a5c60;
       font-size: 23px;
+      margin: 10px 5px 0 0;
 
     }
