@@ -2,9 +2,6 @@ import React, { Component } from "react"
 import logo from "./logo.svg"
 import "./App.css"
 import Main from "../Main/Main.js"
-import { Route, Redirect, Switch } from "react-router-dom"
-
-import Main from "../Main/Main.js"
 
 class App extends Component {
 	render() {
