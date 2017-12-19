@@ -3,7 +3,6 @@
 text-align: center;
 height: 10px;
 color: black;
-
 }
 
 .Resources_content {
@@ -11,61 +10,80 @@ color: black;
   text-align: center;
 
 
+
 }
 
 .text-first {
-  color: #5a5c60;
+  color: #443d3d;
   font-size: 23px;
   margin: 10px 5px 0 0;
+  font-family: 'Bangers';font-size: 22px;
+  text-align: center;
+
 }
 
 .text-second {
-  color: red;
+  color: #f22310;
   font-size: 23px;
   margin: 10px 5px 0 0;
+  font-family: 'Bangers';font-size: 22px;
+
 
 }
 
 .text-third {
-  color: #5a5c60;
+  color: #443d3d;
   font-size: 23px;
   margin: 10px 5px 0 0;
+  font-family: 'Bangers';font-size: 22px;
+
 }
 
 .text-forth {
-  color: #5a5c60;
+  color: #443d3d;
   font-size: 23px;
   margin: 10px 5px 0 0;
+  font-family: 'Bangers';font-size: 22px;
+
 
 }
 .text-fifth {
-  color: red;
+  color: #f22310;
   font-size: 23px;
   margin: 10px 5px 0 0;
-
+  font-family: 'Bangers';font-size: 22px;
 }
 
 .text-sixth {
-  color: red;
+  color: #f22310;
   font-size: 23px;
   margin: 10px 5px 0 0;
+  font-family: 'Bangers';font-size: 22px;
+
 }
 
   .text-seventh {
-    color: red;
+    color: #f22310;
     font-size: 23px;
     margin: 10px 5px 0 0;
+    font-family: 'Bangers';font-size: 22px;
+
+
 
   }
   .text-eigth {
-    color: #5a5c60;
+    color: #f22310;
     font-size: 23px;
     margin: 10px 5px 0 0;
+    font-family: 'Bangers';font-size: 22px;
+
   }
 
     .text-ninth {
-      color: #5a5c60;
+      color: #443d3d;
       font-size: 23px;
       margin: 10px 5px 0 0;
+      font-family: 'Bangers';font-size: 22px;
+
 
     }
