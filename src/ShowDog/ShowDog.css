@@ -24,6 +24,7 @@
   flex-direction: column;
   text-align: left;
   width: 300px;
+  padding-bottom: 10px;
 }
 .dog-details-right p {
   font-size: 20px;
@@ -41,9 +42,12 @@
 .inquire-form {
   text-align: left;
   margin-right: auto;
-  margin-left: 50px;
+  margin-left: 20px;
   width: 350px;
 }
 .inquire-form table {
   width: 100%;
+}
+.delete-link a {
+  color: red;
 }

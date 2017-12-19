@@ -103,6 +103,35 @@ class ShowDog extends Component {
             <div className='inquiries'>
               {inquiries}
             </div>
+            <div className='inquire-form'>
+              <h3>Inquire About {this.state.dog.name}</h3>
+              <form onSubmit={(e) => this.handleSubmit(e)}>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><p><label>Your name</label></p>
+                        <p><input type='text' onChange={(e) => this.handleNameInput(e)} placeholder='Name' /></p>
+                      </td>
+                      <td><p><label>Email address</label></p>
+                        <p><input type='text' onChange={(e) => this.handleEmailInput(e)} placeholder='E-mail' /></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p><label>Phone number</label></p>
+                        <p><input type='text' onChange={(e) => this.handlePhoneInput(e)} placeholder='Phone' /></p></td>
+                      <td><p><label>Location</label></p>
+                        <p><input type='text' onChange={(e) => this.handleLocationInput(e)} placeholder='Location' /></p></td>
+                    </tr>
+                    <tr>
+                      <td><p><label>Comment</label></p>
+                        <p><input type='text' onChange={(e) => this.handleCommentInput(e)} placeholder='Comment' /></p></td>
+                      <td><button type='submit'>Inquire</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+
           </div>
           <div>
             <div className='dog-details-right'>
@@ -112,36 +141,8 @@ class ShowDog extends Component {
               <p><strong>Weight:</strong> {this.state.dog.weight}</p>
               <p><strong>Spayed/Neutered:</strong> {(this.state.dog.spayneuter) ? 'Yes' : 'No' }</p>
               <p><strong>Description:</strong></p><p>{this.state.dog.description}</p>
-              <div className='detail-links'><Link to={editLink}>Edit Details</Link> | <a href={deleteLink}>Delete</a></div>
+              <div className='detail-links'><strong><Link to={editLink}>Edit Details</Link> | <span className='delete-link'><a href={deleteLink}>Delete</a></span></strong></div>
             </div>
-          </div>
-          <div className='inquire-form'>
-            <h3>Inquire About {this.state.dog.name}</h3>
-            <form onSubmit={(e) => this.handleSubmit(e)}>
-              <table>
-                <tbody>
-                  <tr>
-                    <td><p><label>Your name</label></p>
-                      <p><input type='text' onChange={(e) => this.handleNameInput(e)} placeholder='Name' /></p>
-                    </td>
-                    <td><p><label>Email address</label></p>
-                      <p><input type='text' onChange={(e) => this.handleEmailInput(e)} placeholder='E-mail' /></p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><p><label>Phone number</label></p>
-                      <p><input type='text' onChange={(e) => this.handlePhoneInput(e)} placeholder='Phone' /></p></td>
-                    <td><p><label>Location</label></p>
-                      <p><input type='text' onChange={(e) => this.handleLocationInput(e)} placeholder='Location' /></p></td>
-                  </tr>
-                  <tr>
-                    <td><p><label>Comment</label></p>
-                      <p><input type='text' onChange={(e) => this.handleCommentInput(e)} placeholder='Comment' /></p></td>
-                    <td><button type='submit'>Inquire</button></td>
-                  </tr>
-                </tbody>
-              </table>
-            </form>
           </div>
         </div>
       </div>
