@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {
-  Link,
   Redirect,
   Route,
   Switch
@@ -8,6 +7,7 @@ import {
 import './App.css'
 import About from '../About/About.js'
 import AllDogs from '../AllDogs/AllDogs.js'
+import EditDog from '../EditDog/EditDog.js'
 import Main from '../Main/Main.js'
 import Nav from '../Nav/Nav.js'
 import Resources from '../Resources/Resources.js'
@@ -32,6 +32,9 @@ class App extends Component {
             )} />
             <Route path='/dogs/:id' render={(props) => (
               <ShowDog {...props} />
+            )} />
+            <Route path='/edit/:id' render={(props) => (
+              <EditDog {...props} />
             )} />
             <Route exact path='/resources' render={() => (
               <Resources />
