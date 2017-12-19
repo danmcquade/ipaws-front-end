@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
+import './Slider.css'
 
 function NextArrow (props) {
   const {className, style, onClick} = props
