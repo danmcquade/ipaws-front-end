@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import {
-  Link,
   Redirect,
   Route,
   Switch
 } from 'react-router-dom'
 import './App.css'
 import About from '../About/About.js'
+import AddDog from '../AddDog/AddDog.js'
 import AllDogs from '../AllDogs/AllDogs.js'
+import EditDog from '../EditDog/EditDog.js'
 import Main from '../Main/Main.js'
 import Nav from '../Nav/Nav.js'
 import Resources from '../Resources/Resources.js'
@@ -30,8 +31,14 @@ class App extends Component {
             <Route exact path='/dogs' render={() => (
               <AllDogs />
             )} />
-            <Route path='/dogs/:id' render={(props) => (
+            <Route exact path='/dogs/new' render={() => (
+              <AddDog />
+            )} />
+            <Route exact path='/dogs/:id' render={(props) => (
               <ShowDog {...props} />
+            )} />
+            <Route exact path='/edit/:id' render={(props) => (
+              <EditDog {...props} />
             )} />
             <Route exact path='/resources' render={() => (
               <Resources />

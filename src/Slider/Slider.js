@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
+import './Slider.css'
 
 function NextArrow (props) {
   const {className, style, onClick} = props
@@ -39,9 +40,9 @@ class MainSlider extends Component {
     }
     return (
       <Slider {...settings}>
-        <div><img src='1.jpg' /></div>
-        <div><img src='2.jpg' /></div>
-        <div><img src='3.jpg' /></div>
+        <div><img src='1.jpg' alt='First slide' /></div>
+        <div><img src='2.jpg' alt='Second slide' /></div>
+        <div><img src='3.jpg' alt='Third slide' /></div>
       </Slider>
     )
   }
