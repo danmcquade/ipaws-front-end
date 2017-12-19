@@ -121,13 +121,15 @@ class EditDog extends Component {
             <h1>Editing {this.state.dog.name}</h1>
             <img src={this.state.dog.photo} alt={this.state.dog.name} />
           </div>
-          <div className='dog-details-right'>
-            <p><strong>Breed:</strong> {this.state.dog.breed}</p>
-            <p><strong>Age:</strong> {this.state.dog.age}</p>
-            <p><strong>Sex:</strong> {(this.state.dog.sex === 'M') ? 'Male' : 'Female'}</p>
-            <p><strong>Weight:</strong> {this.state.dog.weight}</p>
-            <p><strong>Spayed/Neutered:</strong> {(this.state.dog.spayneuter) ? 'Yes' : 'No' }</p>
-            <p><strong>Description:</strong></p><p>{this.state.dog.description}</p>
+          <div>
+            <div className='dog-details-right'>
+              <p><strong>Breed:</strong> {this.state.dog.breed}</p>
+              <p><strong>Age:</strong> {this.state.dog.age}</p>
+              <p><strong>Sex:</strong> {(this.state.dog.sex === 'M') ? 'Male' : 'Female'}</p>
+              <p><strong>Weight:</strong> {this.state.dog.weight}</p>
+              <p><strong>Spayed/Neutered:</strong> {(this.state.dog.spayneuter) ? 'Yes' : 'No' }</p>
+              <p><strong>Description:</strong></p><p>{this.state.dog.description}</p>
+            </div>
           </div>
         </div>
         <div className='edit-dog-form'>
