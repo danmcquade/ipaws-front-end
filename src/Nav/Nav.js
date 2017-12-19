@@ -7,7 +7,7 @@ class Nav extends Component {
 		return (
 			<nav>
 				<Link to="/" className="push-left">
-					iPwas
+					iPaws
 				</Link>
 				<Link to="/dogs">Dogs</Link>
 				<Link to="/about">About</Link>
