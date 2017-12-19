@@ -35,3 +35,13 @@
   margin-left: 20px;
   text-align: left;
 }
+.inquire-form {
+  text-align: left;
+  margin-right: auto;
+  margin-left: 50px;
+  width: 350px;
+}
+
+.inquire-form table {
+  width: 100%;
+}
