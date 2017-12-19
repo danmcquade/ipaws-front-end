@@ -91,7 +91,9 @@ class ShowDog extends Component {
       )
     })
 
-    let editLink = '/edit/' + this.state.dog._id
+    const editLink = '/edit/' + this.state.dog._id
+    const deleteLink = 'http://localhost:3001/api/dogs/delete/' + this.state.dog._id
+
     return (
       <div>
         <div className='dog-details-container'>
@@ -110,32 +112,34 @@ class ShowDog extends Component {
               <p><strong>Weight:</strong> {this.state.dog.weight}</p>
               <p><strong>Spayed/Neutered:</strong> {(this.state.dog.spayneuter) ? 'Yes' : 'No' }</p>
               <p><strong>Description:</strong></p><p>{this.state.dog.description}</p>
-              <p><Link to={editLink}>Edit {this.state.dog.name}&apos;s Details</Link></p>
+              <div className='detail-links'><Link to={editLink}>Edit Details</Link> | <a href={deleteLink}>Delete</a></div>
             </div>
           </div>
           <div className='inquire-form'>
             <h3>Inquire About {this.state.dog.name}</h3>
             <form onSubmit={(e) => this.handleSubmit(e)}>
               <table>
-                <tr>
-                  <td><p><label>Your name</label></p>
-                    <p><input type='text' onChange={(e) => this.handleNameInput(e)} placeholder='Name' /></p>
-                  </td>
-                  <td><p><label>Email address</label></p>
-                    <p><input type='text' onChange={(e) => this.handleEmailInput(e)} placeholder='E-mail' /></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><p><label>Phone number</label></p>
-                    <p><input type='text' onChange={(e) => this.handlePhoneInput(e)} placeholder='Phone' /></p></td>
-                  <td><p><label>Location</label></p>
-                    <p><input type='text' onChange={(e) => this.handleLocationInput(e)} placeholder='Location' /></p></td>
-                </tr>
-                <tr>
-                  <td><p><label>Comment</label></p>
-                    <p><input type='text' onChange={(e) => this.handleCommentInput(e)} placeholder='Comment' /></p></td>
-                  <td><button type='submit'>Inquire</button></td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td><p><label>Your name</label></p>
+                      <p><input type='text' onChange={(e) => this.handleNameInput(e)} placeholder='Name' /></p>
+                    </td>
+                    <td><p><label>Email address</label></p>
+                      <p><input type='text' onChange={(e) => this.handleEmailInput(e)} placeholder='E-mail' /></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><p><label>Phone number</label></p>
+                      <p><input type='text' onChange={(e) => this.handlePhoneInput(e)} placeholder='Phone' /></p></td>
+                    <td><p><label>Location</label></p>
+                      <p><input type='text' onChange={(e) => this.handleLocationInput(e)} placeholder='Location' /></p></td>
+                  </tr>
+                  <tr>
+                    <td><p><label>Comment</label></p>
+                      <p><input type='text' onChange={(e) => this.handleCommentInput(e)} placeholder='Comment' /></p></td>
+                    <td><button type='submit'>Inquire</button></td>
+                  </tr>
+                </tbody>
               </table>
             </form>
           </div>
