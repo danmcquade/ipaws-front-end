@@ -1,8 +1,21 @@
 import React, { Component } from "react"
 import "./Contact.css"
+import { Redirect } from 'react-router-dom'
 
 class Contact extends Component {
+	constructor () {
+		super();
+		this.state = {
+			fireRedirect: null
+		}
+	}
+	submitForm = (e) => {
+		e.preventDefault()
+		this.setState({ fireRedirect: true })
+	}
+
 	render() {
+		const fireRedirect = this.state.fireRedirect
 		return (
 			<div className="content">
 				<img class='main-logo' src='/logo.png' alt='iPaws Logo' />
@@ -11,7 +24,7 @@ class Contact extends Component {
             However, although we strongly recommend filling out the contact form if you have interest, you are also welcome to simply come out to an adoption event! </p>
 
 				<div className="contact-form">
-					<form>
+					<form onSubmit={this.submitForm}>
 					<table>
 						<tbody>
 						<tr>
@@ -56,6 +69,9 @@ class Contact extends Component {
 							</tbody>
 						</table>
 					</form>
+					{fireRedirect && (
+					<Redirect to= '/contact-submit' />
+					)}
 				</div>
 			</div>
 		)
