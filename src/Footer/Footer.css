@@ -1,0 +1,46 @@
+footer {
+	background: black;
+	color: white;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 0 0 20px;
+}
+
+footer h1 {
+	margin: 0;
+}
+
+footer .social-icon {
+	max-width: 30px;
+}
+
+footer .footer-logo {
+	max-width: 100px;
+}
+
+footer a {
+	color: white;
+	display: inline-block;
+	padding: 20px;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+footer a {
+	background: #282c34;
+}
+footer a:hover {
+	background: white;
+}
+footer li {
+	list-style: none;
+}
+
+footer .push-left {
+	margin-right: auto;
+	background: black;
+}
+footer .push-left:hover {
+	background: #282c34;
+}

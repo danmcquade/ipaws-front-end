@@ -7,13 +7,13 @@ class Nav extends Component {
 		return (
 			<nav>
 				<Link to='/' className='push-left'>
-					iPaws
+					<img className='nav-logo' src='nav-logo.png' />
 				</Link>
-				<Link to='/dogs'>Dogs</Link>
-				<Link to='/about'>About</Link>
-				<Link to='/resources'>Resources</Link>
-				<Link to='/contact'>Contact</Link>
-				<Link to='/dogs/new'><strong>+</strong></Link>
+				<Link className='nav-link' to='/dogs'>Dogs</Link>
+				<Link className='nav-link' to='/about'>About</Link>
+				<Link className='nav-link' to='/resources'>Resources</Link>
+				<Link className='nav-link' to='/contact'>Contact</Link>
+				<Link className='nav-link' to='/dogs/new'><strong>+</strong></Link>
 			</nav>
 		)
 	}

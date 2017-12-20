@@ -27,6 +27,7 @@ class Main extends Component {
   render () {
     return (
       <div>
+        <img className='main-logo' src='logo.png' alt='iPaws Logo' />
         <MainSlider />
         <div className='main-container'>
           <h1>Our mission</h1>

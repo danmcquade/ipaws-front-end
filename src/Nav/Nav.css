@@ -1,10 +1,11 @@
 nav {
-	background: black;
+	background: #007ac1;
 	color: white;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	padding: 0 20px;
+	box-shadow: 0px 1px 10px black;
 }
 
 nav h1 {
@@ -19,8 +20,8 @@ nav a {
 	text-decoration: none;
 }
 
-nav a:hover {
-	background: #282c34;
+a.nav-link:hover {
+	background: #dadadab8;
 }
 
 nav li {
@@ -29,4 +30,10 @@ nav li {
 
 nav .push-left {
 	margin-right: auto;
+}
+
+.nav-logo {
+	max-width: 150px;
+	position: absolute;
+	top: 10px;
 }
