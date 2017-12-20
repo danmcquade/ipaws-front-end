@@ -7,7 +7,7 @@ class Nav extends Component {
 		return (
 			<nav>
 				<Link to='/' className='push-left'>
-					<img className='nav-logo' src='/nav-logo.png' />
+					<img className='nav-logo' src='/nav-logo.png' alt='iPaws Logo' />
 				</Link>
 				<Link className='nav-link' to='/dogs'>Dogs</Link>
 				<Link className='nav-link' to='/about'>About</Link>

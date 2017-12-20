@@ -149,7 +149,7 @@ class EditDog extends Component {
 					</div>
 				</div>
 				<div className="edit-dog-form">
-					<form class="addDog" onSubmit={e => this.handleSubmit(e)}>
+					<form className="addDog" onSubmit={e => this.handleSubmit(e)}>
 						<table>
 							<tbody>
 								<tr>
