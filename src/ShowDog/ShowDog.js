@@ -96,6 +96,7 @@ class ShowDog extends Component {
 
     return (
       <div>
+        <img class='main-logo' src='/logo.png' alt='iPaws Logo' />
         <div className='dog-details-container'>
           <div className='dog-details-left'>
             <h1>Hi, my name is {this.state.dog.name}!</h1>

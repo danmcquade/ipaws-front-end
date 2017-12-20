@@ -25,7 +25,7 @@ class Gallery extends Component {
 
     return (
       <div>
-        <h1>Meet some of our dogs!</h1>
+        <h2>Meet some of our dogs!</h2>
         <div className='main-gallery'>
           {dogs}
         </div>

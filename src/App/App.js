@@ -9,6 +9,7 @@ import About from '../About/About.js'
 import AddDog from '../AddDog/AddDog.js'
 import AllDogs from '../AllDogs/AllDogs.js'
 import Contact from '../Contact/Contact.js'
+import ContactSubmission from '../ContactSubmission/ContactSubmission.js'
 import EditDog from '../EditDog/EditDog.js'
 import Main from '../Main/Main.js'
 import Nav from '../Nav/Nav.js'
@@ -31,6 +32,9 @@ class App extends Component {
             )} />
             <Route exact path='/contact' render={() => (
               <Contact />
+            )} />
+            <Route exact path='/contact-submit' render={() => (
+              <ContactSubmission />
             )} />
             <Route exact path='/dogs' render={() => (
               <AllDogs />

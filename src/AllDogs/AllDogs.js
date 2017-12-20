@@ -44,6 +44,7 @@ class AllDogs extends Component {
 
     return (
       <div>
+        <img class='main-logo' src='/logo.png' alt='iPaws Logo' />
         <h1>Meet Our Dogs</h1>
         <div className='all-dogs'>
           {dogs}
