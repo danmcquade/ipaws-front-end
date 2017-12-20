@@ -29,5 +29,5 @@
 .index-image:hover .dog-name {
   transition:all 0.2s ease-in-out;
   background-color: rgba(255,255,255,.5);
-   opacity: 1;
+  opacity: 1;
 }
