@@ -91,6 +91,8 @@ class AddDog extends Component {
 	render() {
 		return (
 			<div>
+				<img class='main-logo' src='/logo.png' alt='iPaws Logo' />
+				<h1>Add a new dog</h1>
 				<div className="add-dog-form">
 					<form class="addDog" onSubmit={e => this.handleSubmit(e)}>
 						<table>

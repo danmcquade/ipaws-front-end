@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: center;
 	width: 80%;
-	margin: 20px auto;
+	margin: 0 auto;
 }
 
 .add-dog-form input[type="text"] {
@@ -19,7 +19,6 @@
 }
 
 .add-dog-form {
-	padding: 50px;
 }
 .add-dog-form [type="submit"]:hover {
 	background-color: #007ac1;
