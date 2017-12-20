@@ -16,7 +16,8 @@ class Gallery extends Component {
         <div key={index}>
           <div className='index-image' style={divStyle}>
             <Link to={url} >
-            <div className='dog-name'>{dog.name}</div> </Link>
+              <div className='dog-name'>{dog.name}</div>
+            </Link>
           </div>
         </div>
       )
