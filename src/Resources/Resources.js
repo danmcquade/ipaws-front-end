@@ -5,7 +5,7 @@ class Resources extends Component {
   render () {
     return (
       <div className='wrapper'>
-        <img class='main-logo' src='/logo.png' alt='iPaws Logo' />
+        <img className='main-logo' src='/logo.png' alt='iPaws Logo' />
         <div className='resources-container'>
           <h1>Adoption Resources</h1>
           <p>Looking for more information on adopting dogs ? Here at iPaws we are extremely dedicated to matching potential dog adopters with the perfect dog for them & vice versa. For these reasons we ask that you please browse through our Resources (below) to find information on caring for your pet, how get involved with animal advocacy, resources for shelters, finding local adoption events, and much more!</p>
