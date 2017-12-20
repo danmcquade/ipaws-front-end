@@ -4,3 +4,15 @@
 	/* font-family: fantasy; */
 	margin-top: 50px;
 }
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+form [type="submit"]:hover {
+	background-color: #007ac1;
+}
