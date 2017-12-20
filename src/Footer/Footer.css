@@ -10,9 +10,13 @@ footer {
 footer h1 {
 	margin: 0;
 }
-footer img {
-	height: 20px;
-	width: 23px;
+
+footer .social-icon {
+	max-width: 30px;
+}
+
+footer .footer-logo {
+	max-width: 100px;
 }
 
 footer a {
