@@ -14,7 +14,7 @@ class Main extends Component {
 
   componentWillMount () {
     axios
-    .get('http://localhost:3001/api/dogs')
+    .get('https://ipaws-back-end.herokuapp.com/api/dogs')
     .then(response => {
       let theDogs = response.data.slice(0, 3)
       this.setState({

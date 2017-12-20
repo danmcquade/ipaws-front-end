@@ -20,7 +20,7 @@ class ShowDog extends Component {
 
   handleSubmit (e) {
     e.preventDefault()
-    axios.post(`http://localhost:3001/api/dogs/newinquiry/${this.state.dog_id}`, {
+    axios.post(`https://ipaws-back-end.herokuapp.com/api/dogs/newinquiry/${this.state.dog_id}`, {
       name: this.state.inquiry_name,
       email: this.state.inquiry_email,
       phone: this.state.inquiry_phone,
@@ -69,7 +69,7 @@ class ShowDog extends Component {
 
   componentWillMount () {
     axios
-    .get(`http://localhost:3001/api/dogs/${this.state.dog_id}`)
+    .get(`https://ipaws-back-end.herokuapp.com/api/dogs/${this.state.dog_id}`)
     .then((response) => {
       console.log(response)
       this.setState({
@@ -92,7 +92,7 @@ class ShowDog extends Component {
     })
 
     const editLink = '/edit/' + this.state.dog._id
-    const deleteLink = 'http://localhost:3001/api/dogs/delete/' + this.state.dog._id
+    const deleteLink = 'https://ipaws-back-end.herokuapp.com/api/dogs/delete/' + this.state.dog._id
 
     return (
       <div>

@@ -13,7 +13,7 @@ class AllDogs extends Component {
 
   componentWillMount () {
     axios
-    .get('http://localhost:3001/api/dogs')
+    .get('https://ipaws-back-end.herokuapp.com/api/dogs')
     .then((response) =>
       this.setState({
         dogs: response.data

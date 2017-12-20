@@ -21,7 +21,7 @@ class EditDog extends Component {
 
 	componentWillMount() {
 		axios
-			.get(`http://localhost:3001/api/dogs/${this.state.dog_id}`)
+			.get(`https://ipaws-back-end.herokuapp.com/api/dogs/${this.state.dog_id}`)
 			.then(response => {
 				console.log(response)
 				this.setState({
@@ -46,7 +46,7 @@ class EditDog extends Component {
 	handleSubmit(e) {
 		e.preventDefault()
 		axios
-			.post(`http://localhost:3001/api/dogs/update/${this.state.dog_id}`, {
+			.post(`https://ipaws-back-end.herokuapp.com/api/dogs/update/${this.state.dog_id}`, {
 				name: this.state.dog_name,
 				photo: this.state.dog_photo,
 				breed: this.state.dog_breed,

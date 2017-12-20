@@ -20,7 +20,7 @@ class AddDog extends Component {
 	handleSubmit(e) {
 		e.preventDefault()
 		axios
-			.post(`http://localhost:3001/api/dogs/new/`, {
+			.post(`https://ipaws-back-end.herokuapp.com/api/dogs/new/`, {
 				name: this.state.dog_name,
 				photo: this.state.dog_photo,
 				breed: this.state.dog_breed,
