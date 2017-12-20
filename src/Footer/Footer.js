@@ -7,16 +7,16 @@ class Footer extends Component {
     return (
       <footer>
         <Link to='/' className='push-left'>
-          <img src='footer/footer-logo.png' className='footer-logo' alt='iPaws Pawprint Logo' />
+          <img src='/footer/footer-logo.png' className='footer-logo' alt='iPaws Pawprint Logo' />
         </Link>
         <a href='#'>
-          <img src='footer/email.png' className='social-icon' alt='e-Mail Icon' />
+          <img src='/footer/email.png' className='social-icon' alt='e-Mail Icon' />
         </a>
         <a href='#'>
-          <img src='footer/fb.png' className='social-icon' alt='Facebook Icon' />
+          <img src='/footer/fb.png' className='social-icon' alt='Facebook Icon' />
         </a>
         <a href='#'>
-          <img src='footer/twitter.png' className='social-icon' alt='Twitter Icon' />
+          <img src='/footer/twitter.png' className='social-icon' alt='Twitter Icon' />
         </a>
       </footer>
     )
