@@ -1,15 +1,23 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import './Gallery.css'
+
 class Gallery extends Component {
   render () {
     const dogs = this.props.dogs.map((dog, index) => {
       let url = '/dogs/' + dog._id
+      let divStyle = {
+        backgroundImage: 'url(' + dog.photo + ')',
+        backgroundSize: 'cover',
+        height: '300px',
+        width: '300px'
+      }
       return (
         <div key={index}>
-          <Link to={url}>
-            <h3>{dog.name}</h3>
-            <img src={dog.photo} alt={dog.name} />
-          </Link>
+          <div className='index-image' style={divStyle}>
+            <Link to={url} >
+            <div className='dog-name'>{dog.name}</div> </Link>
+          </div>
         </div>
       )
     })

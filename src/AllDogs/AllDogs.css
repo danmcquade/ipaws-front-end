@@ -10,3 +10,7 @@
 .all-dogs img {
   max-width: 300px;
 }
+
+.dog-detail {
+  margin: 20px;
+}

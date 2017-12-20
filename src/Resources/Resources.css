@@ -1,0 +1,13 @@
+.adoption-resource {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.adoption-resource li {
+  margin-top: 5px;
+}
+.resources-container {
+  text-align: left;
+  max-width: 75%;
+  margin: 0 auto;
+}
