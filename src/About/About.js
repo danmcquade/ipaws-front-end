@@ -5,7 +5,7 @@ class About extends Component {
   render () {
     return (
       <div>
-        <img class='main-logo' src='/logo.png' alt='iPaws Logo' />
+        <img className='main-logo' src='/logo.png' alt='iPaws Logo' />
         <div className='about-content'>
           <h1>About iPaws</h1>
           <h3>Mission statement</h3>
