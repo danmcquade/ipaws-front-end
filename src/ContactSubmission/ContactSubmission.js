@@ -6,7 +6,7 @@ class ContactSubmission extends Component {
       <div>
       <img class='main-logo' src='/logo.png' alt='iPaws Logo' />
       <h1>Woof, Woof!, Thank You!</h1>
-      <p>We would like to personally thank you for your interest in one of our dogs. It means the world to us & we will get in touch with you ASAP.
+      <p>All of us here at iPaws would like to personally thank you for your interest in one of our dogs. It means the world to us & we will get in touch with you ASAP.
       </p>
       </div>
 
