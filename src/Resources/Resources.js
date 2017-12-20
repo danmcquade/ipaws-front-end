@@ -6,6 +6,7 @@ class Resources extends Component {
     return (
       <div className='resources-container'>
         <h1>Adoption Resources</h1>
+        <p>Looking for more information on adopting dogs ? Here at iPaws we are extremely dedicated to matching potential dog adopters with the perfect dog for them & vice versa. For these reasons we ask that you please browse through our Resources (below) to find information on caring for your pet, how get involved with animal advocacy, resources for shelters, finding local adoption events, and much more!</p>
         <div className='adoption-resource'>
           <p>Please help our dogs in high-kill shelters. These dogs might not make it to see the next day.<br />
             <li><a href='http://www.citydogsrescuedc.org/about.html#.WjgfT7Q-c6g'><strong>Rescue a dog from a shelter with a high kill rate</strong></a></li></p>
