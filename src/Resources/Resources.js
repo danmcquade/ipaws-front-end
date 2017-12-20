@@ -4,7 +4,7 @@ import './Resources.css'
 class Resources extends Component {
   render () {
     return (
-      <div>
+      <div className='wrapper'>
         <img class='main-logo' src='/logo.png' alt='iPaws Logo' />
         <div className='resources-container'>
           <h1>Adoption Resources</h1>
