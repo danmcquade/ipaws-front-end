@@ -10,9 +10,13 @@ footer {
 footer h1 {
 	margin: 0;
 }
-footer img {
-	height: 20px;
-	width: 23px;
+
+footer .social-icon {
+	max-width: 30px;
+}
+
+footer .footer-logo {
+	max-width: 100px;
 }
 
 footer a {
@@ -33,10 +37,10 @@ footer li {
 	list-style: none;
 }
 
-.push-left {
+footer .push-left {
 	margin-right: auto;
 	background: black;
 }
-.push-left:hover {
+footer .push-left:hover {
 	background: #282c34;
 }
