@@ -1,8 +1,22 @@
-import React, { Component } from "react"
-import "./Contact.css"
+import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
+import './Contact.css'
 
 class Contact extends Component {
+	constructor () {
+	super();
+	this.state = {
+		fireRedirect: null
+	}
+}
+
+submitForm = (e) => {
+	e.preventDefault()
+	this.setState({ fireRedirect: true })
+}
+
 	render() {
+		const fireRedirect = this.state.fireRedirect
 		return (
 			<div className="content">
 				<img class="main-logo" src="/logo.png" alt="iPaws Logo" />
@@ -18,7 +32,7 @@ class Contact extends Component {
 				</p>
 
 				<div className="contact-form">
-					<form className="contact">
+					<form className="contact" onSubmit={this.submitForm}>
 						<div className="couple">
 							<div>
 								<label> Name </label>
@@ -57,6 +71,9 @@ class Contact extends Component {
 						</div>
 						<input type="submit" />
 					</form>
+					{fireRedirect && (
+						<Redirect to= '/contact-submit' />
+					)}
 				</div>
 			</div>
 		)
