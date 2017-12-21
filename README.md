@@ -1,6 +1,6 @@
 # iPaws - International Pet Adoption Web Service
 
-iPaws( International Pet Adoption Web Service) is a full-stack application that connect dogs waiting on adoption overseas with prospective home givers in the US.
+iPaws (The International Pet Adoption Web Service) is a full-stack application that connect dogs waiting on adoption overseas with prospective home givers in the US.
 
 ## Live Deployments:
 - Front-end: (http://ipaws.surge.sh/)
