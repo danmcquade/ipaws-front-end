@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
+import './ContactSubmission.css'
 
 class ContactSubmission extends Component {
   render () {
     return (
       <div>
         <img className='main-logo' src='/logo.png' alt='iPaws Logo' />
-        <h1>Woof, Woof! Thank You!</h1>
-        <p>We would like to personally thank you for your interest in one of our dogs. It means the world to us & we will get in touch with you ASAP.</p>
+        <div class='contact-submit-content'>
+          <h1>Woof, Woof! Thank You!</h1>
+          <p>Thank you very much for reaching out to iPaws. We strive to respond to all inquiries within 24 hours. A member of our staff will be in touch with you shortly. If you need immediate assistance, please call our office at (202) 728-0010. Thank you!</p>
+        </div>
       </div>
-
     )
   }
 }
