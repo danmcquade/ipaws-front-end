@@ -1,21 +1,23 @@
 .index-image a {
-  transition:all 0.2s ease-in-out;
+  transition:all 0.4 ease-in-out;
   width: 300px;
   height: 300px;
   border-radius: 300px;
   display: block;
 }
 .index-image a:hover {
-  transition:all 0.2s ease-in-out;
-  background-color: rgba(255,255,255,.5);
-  transition:all 0.2s ease-in-out;
+  background-color: rgba(93,93,93,.6);
+  transition:all 0.4s ease-in-out;
 }
 .index-image a {
   color: black;
   font-weight: 900;
   font-size: 20px;
+  transition:all 0.4s ease-in-out;
 }
 .dog-name {
+  text-shadow: 1px 1px 1px #5a5a5a;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,10 +27,13 @@
   position: relative;
   text-align: center;
   opacity: 0;
-  transition:all .2s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+.dog-name p {
+  font-size: 28px;
 }
 .index-image:hover .dog-name {
-  transition:all 0.2s ease-in-out;
-  background-color: rgba(255,255,255,.5);
+  transition:all .4s ease-in-out;
+  /* background-color: rgba(255,255,255,.5); */
   opacity: 1;
 }

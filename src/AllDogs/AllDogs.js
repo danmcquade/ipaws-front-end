@@ -38,7 +38,7 @@ class AllDogs extends Component {
         <div className='dog-detail' key={index}>
           <div className='index-image' style={divStyle}>
             <Link to={url} >
-              <div className='dog-name'>{dog.name}</div>
+              <div className='dog-name'><p>{dog.name}</p></div>
             </Link>
           </div>
         </div>
