@@ -5,7 +5,7 @@
   margin: 0 auto;
 }
 .mission-statement {
-  text-align: left;
+  text-align: justify;
 }
 .main-gallery {
   display: flex;
