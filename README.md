@@ -26,4 +26,4 @@ iPaws utilized the full MERN stack. The app has a React front-end and an Express
 - Everett was responsible for gathering and inputing seed data, collection of external resources, development and styling of components, and building the presentation outline.
 - Ante developed and styled components and built out the forms used throughout the app.
 
-## We utilized the 'Feature Branch Workflow' model throughout the development process in order to coordinate our work and individual contributions to the project
+### We utilized the 'Feature Branch Workflow' model throughout the development process in order to coordinate our work and individual contributions to the project
