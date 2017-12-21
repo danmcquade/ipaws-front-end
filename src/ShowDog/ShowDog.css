@@ -71,6 +71,9 @@
 .comment{
   text-align: center;
 }
+.inquire-form p {
+  margin: 10px;
+}
 button{
   margin-bottom: 20px;
 }
