@@ -31,7 +31,8 @@ class AllDogs extends Component {
         backgroundSize: 'cover',
         height: '300px',
         width: '300px',
-        borderRadius: '300px'
+        borderRadius: '300px',
+        boxShadow: '0px 0px 5px black'
       }
       return (
         <div className='dog-detail' key={index}>
