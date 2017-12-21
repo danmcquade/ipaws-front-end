@@ -90,112 +90,117 @@ class AddDog extends Component {
 
 	render() {
 		return (
-			<div>
-				<img className='main-logo' src='/logo.png' alt='iPaws Logo' />
+			<div className="content">
+				<img className="main-logo" src="/logo.png" alt="iPaws Logo" />
 				<h1>Add a new dog</h1>
 				<div className="add-dog-form">
 					<form className="addDog" onSubmit={e => this.handleSubmit(e)}>
-						<table>
-							<tbody>
-								<tr>
-									<td>
-										<label>Name </label>
-										<p>
-											<input
-												type="text"
-												onChange={e => this.handleNameInput(e)}
-											/>
-										</p>
-									</td>
-									<td>
-										<label>Breed </label>
-										<p>
-											<input
-												type="text"
-												onChange={e => this.handleBreedInput(e)}
-											/>
-										</p>
-									</td>
-								</tr>
+						<div className="couple">
+							<div>
+								<label>Name </label>
+								<p>
+									<input
+										type="text"
+										placeholder="Name"
+										onChange={e => this.handleNameInput(e)}
+									/>
+								</p>
+							</div>
 
-								<tr>
-									<td>
-										<label>Age </label>
-										<p>
-											<input
-												type="text"
-												onChange={e => this.handleAgeInput(e)}
-											/>
-										</p>
-									</td>
-									<td>
-										<label>Sex </label>
-										<p>
-											<input
-												list="sex"
-												type="text"
-												onChange={e => this.handleSexInput(e)}
-											/>
-											<datalist id="sex">
-												<option value="male" />
-												<option value="female" />
-											</datalist>
-										</p>
-									</td>
-								</tr>
+							<div>
+								<label>Breed </label>
+								<p>
+									<input
+										type="text"
+										onChange={e => this.handleBreedInput(e)}
+										placeholder="Breed"
+									/>
+								</p>
+							</div>
+						</div>
+						<div className="couple">
+							<div>
+								<label>Age </label>
+								<p>
+									<input
+										type="text"
+										onChange={e => this.handleAgeInput(e)}
+										placeholder="Age"
+									/>
+								</p>
+							</div>
 
-								<tr>
-									<td>
-										<label>Weight </label>
-										<p>
-											<input
-												type="text"
-												onChange={e => this.handleWeightInput(e)}
-											/>
-										</p>
-									</td>
-									<td>
-										<label>Spayed/Neutered </label>
-										<p>
-											<input
-												list="spayed"
-												type="text"
-												onChange={e => this.handleFixedInput(e)}
-											/>
-											<datalist id="spayed">
-												<option value="true" />
-												<option value="false" />
-											</datalist>
-										</p>
-									</td>
-								</tr>
+							<div>
+								<label>Sex </label>
+								<p>
+									<input
+										list="sex"
+										type="text"
+										onChange={e => this.handleSexInput(e)}
+										placeholder="Sex"
+									/>
+									<datalist id="sex">
+										<option value="male" />
+										<option value="female" />
+									</datalist>
+								</p>
+							</div>
+						</div>
+						<div className="couple">
+							<div>
+								<label>Weight </label>
+								<p>
+									<input
+										type="text"
+										onChange={e => this.handleWeightInput(e)}
+										placeholder="Weight"
+									/>
+								</p>
+							</div>
 
-								<tr>
-									<td>
-										<label>Photo </label>
-										<p>
-											<input
-												type="text"
-												onChange={e => this.handlePhotoInput(e)}
-											/>
-										</p>
-									</td>
+							<div>
+								<label>Spayed/Neutered </label>
+								<p>
+									<input
+										list="spayed"
+										type="text"
+										onChange={e => this.handleFixedInput(e)}
+										placeholder="Spayed/Neutered"
+									/>
+									<datalist id="spayed">
+										<option value="true" />
+										<option value="false" />
+									</datalist>
+								</p>
+							</div>
+						</div>
+						<div>
+							<label>Photo </label>
+							<p>
+								<input
+									id="photo"
+									type="text"
+									onChange={e => this.handlePhotoInput(e)}
+									placeholder="Photo URL"
+								/>
+							</p>
+						</div>
 
-									<td>
-										<label>Description: </label>
-										<p>
-											<textarea
-												rows="1"
-												type="text"
-												onChange={e => this.handleDescriptionInput(e)}
-											/>
-										</p>
-									</td>
-								</tr>
+						<div>
+							<label>Description: </label>
+							<p>
+								<textarea
+									id="xtbox"
+									type="text"
+									rows="5"
+									column="80"
+									type="text"
+									onChange={e => this.handleDescriptionInput(e)}
+								/>
+							</p>
+						</div>
 
-								<input id="bttn" type="submit" />
-							</tbody>
-						</table>
+						<input id="bttn" type="submit" />
 					</form>
 				</div>
 			</div>
