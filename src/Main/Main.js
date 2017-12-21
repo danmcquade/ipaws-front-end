@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Logo from '../Logo/Logo.js'
 import MainSlider from '../Slider/Slider.js'
 import Gallery from '../Gallery/Gallery.js'
 import './Main.css'
@@ -27,7 +28,7 @@ class Main extends Component {
   render () {
     return (
       <div>
-        <img className='main-logo' src='/logo.png' alt='iPaws Logo' />
+        <Logo />
         <MainSlider />
         <div className='main-container'>
           <h1>Welcome to iPaws</h1>

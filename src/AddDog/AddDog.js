@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import axios from "axios"
+import Logo from '../Logo/Logo.js'
 import "./AddDog.css"
 
 class AddDog extends Component {
@@ -91,7 +92,7 @@ class AddDog extends Component {
 	render() {
 		return (
 			<div className="content">
-				<img className="main-logo" src="/logo.png" alt="iPaws Logo" />
+				<Logo />
 				<h1>Add a new dog</h1>
 				<div className="add-dog-form">
 					<form className="addDog" onSubmit={e => this.handleSubmit(e)}>

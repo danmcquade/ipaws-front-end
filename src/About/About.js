@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import Logo from '../Logo/Logo.js'
 import './About.css'
 
 class About extends Component {
   render () {
     return (
       <div>
-        <img className='main-logo' src='/logo.png' alt='iPaws Logo' />
+        <Logo />
         <div className='about-content'>
           <h1>About iPaws</h1>
           <h3>Mission statement</h3>

@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import axios from "axios"
+import Logo from '../Logo/Logo.js'
 import "./EditDog.css"
 
 class EditDog extends Component {
@@ -122,6 +123,7 @@ class EditDog extends Component {
 	render() {
 		return (
 			<div>
+				<Logo />
 				<div className="dog-details-container">
 					<div className="dog-details-left">
 						<h1>Editing {this.state.dog.name}</h1>

@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Logo from '../Logo/Logo.js'
 import './Resources.css'
 
 class Resources extends Component {
   render () {
     return (
       <div className='wrapper'>
-        <img className='main-logo' src='/logo.png' alt='iPaws Logo' />
+        <Logo />
         <div className='resources-container'>
           <h1>Adoption Resources</h1>
           <p>Looking for more information on dog adoption? Here at iPaws we are dedicated to matching potential dog adopters with the perfect dog for them. Please browse through the resources below to find information on the adoption process, about caring for your pet, how get involved with animal advocacy, resources for shelters, finding local adoption events, and much more! If you know of a great resource that seems to be missing from this list, <Link to='/contact'>let us know!</Link></p>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Logo from '../Logo/Logo.js'
 import './ShowDog.css'
 import { Link } from 'react-router-dom'
 
@@ -96,7 +97,7 @@ class ShowDog extends Component {
 
     return (
       <div>
-        <img className='main-logo' src='/logo.png' alt='iPaws Logo' />
+        <Logo />
         <div className='dog-details-container'>
           <div className='dog-details-left'>
             <h1>Hi, my name is {this.state.dog.name}!</h1>
@@ -106,39 +107,35 @@ class ShowDog extends Component {
             </div>
             <div className='inquire-form'>
               <h3>Inquire About {this.state.dog.name}</h3>
-              <form className="dog" onSubmit={(e) => this.handleSubmit(e)}>
-
-                      <div className="couple">
-                      <div>
-                      <p><label>Your name</label></p>
-                        <p><input type='text' onChange={(e) => this.handleNameInput(e)} placeholder='Name'
-                        /></p>
-                        </div>
-                        <div>
+              <form className='dog' onSubmit={(e) => this.handleSubmit(e)}>
+                <div className='couple'>
+                  <div>
+                    <p><label>Your name</label></p>
+                    <p><input type='text' onChange={(e) => this.handleNameInput(e)} placeholder='Name'
+                      /></p>
+                  </div>
+                  <div>
                     <p><label>Email address</label></p>
-                        <p><input type='text' onChange={(e) => this.handleEmailInput(e)} placeholder='E-mail' /></p>
-                        </div>
-                        </div>
-
-                        <div className="couple">
-                        <div>
-                      <p><label>Phone number</label></p>
-                        <p><input type='text' onChange={(e) => this.handlePhoneInput(e)} placeholder='Phone' /></p>
-                        </div>
-                        <div>
-                      <p><label>Location</label></p>
-                        <p><input type='text' onChange={(e) => this.handleLocationInput(e)} placeholder='Location' /></p>
-                        </div>
-                        </div>
-                    <div className="comment">
-                      <p><label>Comment</label></p>
-                      <div className="couple">
-                        <p><textarea id="xtbox" type='text' onChange={(e) => this.handleCommentInput(e)}  /></p>
-                        </div>
-                        <button type='submit'>Inquire</button>
-                    </div>
-
-
+                    <p><input type='text' onChange={(e) => this.handleEmailInput(e)} placeholder='E-mail' /></p>
+                  </div>
+                </div>
+                <div className='couple'>
+                  <div>
+                    <p><label>Phone number</label></p>
+                    <p><input type='text' onChange={(e) => this.handlePhoneInput(e)} placeholder='Phone' /></p>
+                  </div>
+                  <div>
+                    <p><label>Location</label></p>
+                    <p><input type='text' onChange={(e) => this.handleLocationInput(e)} placeholder='Location' /></p>
+                  </div>
+                </div>
+                <div className='comment'>
+                  <p><label>Comment</label></p>
+                  <div className='couple'>
+                    <p><textarea id='xtbox' type='text' onChange={(e) => this.handleCommentInput(e)} /></p>
+                  </div>
+                  <button type='submit'>Inquire</button>
+                </div>
               </form>
             </div>
 

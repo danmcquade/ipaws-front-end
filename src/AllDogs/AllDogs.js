@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import Logo from '../Logo/Logo.js'
 import './AllDogs.css'
 
 class AllDogs extends Component {
@@ -44,7 +45,7 @@ class AllDogs extends Component {
 
     return (
       <div>
-        <img className='main-logo' src='/logo.png' alt='iPaws Logo' />
+        <Logo />
         <h1>Meet Our Dogs</h1>
         <div className='all-dogs'>
           {dogs}
