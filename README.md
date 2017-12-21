@@ -15,9 +15,15 @@ iPaws allows users to browse a catalogue of dogs available for adoption, make in
 - Resources and about components with mission statement and relevant additional information with the links
 
 ## Technologies Used
-iPaws uses a React/Nodejs front-end and Express/MongoDB backend along with axios, react router dome, and react slick dependencies.
+iPaws utilized the full MERN stack. The app has a React front-end and an Express/MongoDB back-end. Dependencies used include:
+- axios
+- react-router-dom
+- react-slick (Slider component from (https://github.com/akiran/react-slick))
+- body-parser
 
 ## Group Member Roles
 - Dan set up the initial functionality of the app and was involved in development of both the front and back end. He created the logos and image assets used throughout the app.
-- Everett was responsible for inputing of seed data, collection of external resources, and development and styling of components.
-- Ante developed components and worked on styling of the app. We used the git work flow to coordinate our work and contributions to the project
+- Everett was responsible for gathering and inputing seed data, collection of external resources, development and styling of components, and building the presentation outline.
+- Ante developed and styled components and built out the forms used throughout the app.
+
+## We utilized the 'Feature Branch Workflow' model throughout the development process in order to coordinate our work and individual contributions to the project
