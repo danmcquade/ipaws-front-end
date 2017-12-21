@@ -40,7 +40,7 @@ class MainSlider extends Component {
     }
     return (
       <Slider {...settings}>
-        <div><img className='slider-img' src='/slides/slide-ipaws.png' alt='International Pet Adoption Web Service' /></div>
+        <div><img className='slider-img' src='/slides/slide-ipaws.jpg' alt='International Pet Adoption Web Service' /></div>
         <div><a href='https://dcpawsrescue.org/event/adoption-event-old-town-alexandria-the-dog-park-12/' target='_blank' rel='noopener noreferrer'><img className='slider-img' src='/slides/slide-event.jpg' alt='Upcoming Dog Adoption Event' /></a></div>
         <div><a href='https://secure.aspca.org/donate/holiday' target='_blank' rel='noopener noreferrer'><img className='slider-img' src='/slides/slide-holiday.jpg' alt='iPaws Holiday Donations' /></a></div>
       </Slider>
