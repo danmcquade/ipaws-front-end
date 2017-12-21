@@ -29,7 +29,7 @@ class MainSlider extends Component {
     const settings = {
       dots: true,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 4000,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
@@ -40,9 +40,8 @@ class MainSlider extends Component {
     }
     return (
       <Slider {...settings}>
-        <div><img src='1.jpg' alt='First slide' /></div>
-        <div><img src='2.jpg' alt='Second slide' /></div>
-        <div><img src='3.jpg' alt='Third slide' /></div>
+        <div><a href='https://dcpawsrescue.org/event/adoption-event-old-town-alexandria-the-dog-park-12/' target='_blank' rel='noopener noreferrer'><img className='slider-img' src='/slides/slide-event.jpg' alt='Upcoming Dog Adoption Event' /></a></div>
+        <div><a href='https://secure.aspca.org/donate/holiday' target='_blank' rel='noopener noreferrer'><img className='slider-img' src='/slides/slide-holiday.jpg' alt='iPaws Holiday Donations' /></a></div>
       </Slider>
     )
   }

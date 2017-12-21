@@ -7,3 +7,12 @@ text-align: left;
 .about-content p {
   text-align: justify;
 }
+
+.partner-links img {
+  max-width: 200px;
+  margin: 0 20px;
+}
+
+.embassy {
+  max-width: 285px !important;
+}
