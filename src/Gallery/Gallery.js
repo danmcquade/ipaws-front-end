@@ -10,7 +10,8 @@ class Gallery extends Component {
         backgroundImage: 'url(' + dog.photo + ')',
         backgroundSize: 'cover',
         height: '300px',
-        width: '300px'
+        width: '300px',
+        borderRadius: '300px'
       }
       return (
         <div key={index}>
