@@ -1,26 +1,39 @@
-.edit-dog-form form {
+.edit-dog-form {
 	font-size: 15px;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	width: 80%;
-	margin: 20px auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	text-align: center;
 }
 
-.edit-dog-form input[type="text"] {
-	/* padding: 20px;
-	width: 100px;
-	height: 1px;
-  margin: 10px; */
-}
-
-.edit-dog-form input {
-	/* font-size: 25px;
-  text-align: center; */
-}
-
-.edit-dog-form {
-	padding: 50px;
-}
 .edit-dog-form [type="submit"]:hover {
 	background-color: #007ac1;
+}
+.couple {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.addDog {
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	align-items: center;
+}
+.addDog [type="text"]{
+	width: 215px;
+	text-align: center;
+	margin-right:  5px;
+	margin-left:  5px;
+}
+#tbox {
+    height: 70px;
+    width : 300px;
+		border-color: #d6d4d4;
+}
+#photo {
+	width: 448px;
 }
