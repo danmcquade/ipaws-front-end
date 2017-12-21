@@ -64,7 +64,7 @@ class EditDog extends Component {
 			)
 			.then(response => {
 				console.log(response)
-				window.location.reload()
+				window.location.href = `/#/dogs/${this.state.dog_id}`
 			})
 			.catch(err => {
 				console.log(err)
