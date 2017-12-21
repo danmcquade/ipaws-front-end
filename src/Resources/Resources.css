@@ -2,8 +2,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-.adoption-resource li {
+.adoption-resources li {
   margin-top: 5px;
 }
 .resources-container {
@@ -12,7 +11,9 @@
   margin: 0 auto;
   margin-bottom: 20px;
 }
-
+.adoption-resources-list {
+    margin-left: 20px;
+}
 .resources-container p {
   text-align: justify;
 }
