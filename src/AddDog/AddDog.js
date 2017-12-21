@@ -194,7 +194,6 @@ class AddDog extends Component {
 									type="text"
 									rows="5"
 									column="80"
-									type="text"
 									onChange={e => this.handleDescriptionInput(e)}
 								/>
 							</p>
