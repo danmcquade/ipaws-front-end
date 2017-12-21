@@ -136,6 +136,7 @@ class ShowDog extends Component {
           </div>
           <div>
             <div className='dog-details-right'>
+              <p className='details-header'><strong>{this.state.dog.name}&apos;s Details</strong></p>
               <p><strong>Breed:</strong> {this.state.dog.breed}</p>
               <p><strong>Age:</strong> {this.state.dog.age}</p>
               <p><strong>Sex:</strong> {(this.state.dog.sex === 'M') ? 'Male' : 'Female'}</p>
