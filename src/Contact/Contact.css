@@ -1,18 +1,16 @@
 .contact-form {
-	text-align: center;
-	font-size: 17px;
-	/* font-family: fantasy; */
-	margin-top: 50px;
-}
-.content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 50%;
+	text-align: left;
+	margin-top: 50px;
+}
+.contact-container {
+	text-align: justify;
+	width: 60%;
 	margin: 0 auto;
 }
-
 form [type="submit"]:hover {
 	background-color: #007ac1;
 }

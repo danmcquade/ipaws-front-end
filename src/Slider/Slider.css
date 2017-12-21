@@ -1,10 +1,15 @@
 .slick-slider {
-  max-width: 500px;
+  max-width: 1024px;
   margin: 0 auto;
   margin-bottom: 50px;
   margin-top: 50px;
 }
 .slick-next:before, .slick-prev:before {
-color: #000000;
+color: #007ac1;
 font-size: 25px;
+display: none;
+}
+
+.slider-img {
+  max-width: 1024px;
 }

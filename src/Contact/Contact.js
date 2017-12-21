@@ -17,12 +17,11 @@ class Contact extends Component {
 	render() {
 		const fireRedirect = this.state.fireRedirect
 		return (
-			<div className="content">
+			<div>
 				<img class='main-logo' src='/logo.png' alt='iPaws Logo' />
+				<div className='contact-container'>
 				<h1>Contact iPaws</h1>
-          <p>iPaws does not run a dedicated facility to house homeless pets. For this reason, we ask that if you would like to meet a particular pet, please fill out the contact form below with your Name, Telephone number, current Address, Email, and a brief Message just stating your interest in a particular dog(s).
-            However, although we strongly recommend filling out the contact form if you have interest, you are also welcome to simply come out to an adoption event! </p>
-
+        <p>iPaws does not run a dedicated facility to house homeless pets. For this reason, we ask that if you would like to meet a particular pet, please fill out the contact form below with your Name, Telephone number, current Address, Email, and a brief Message just stating your interest in a particular dog(s). However, although we strongly recommend filling out the contact form if you have interest, you are also welcome to simply come out to an adoption event!</p>
 				<div className="contact-form">
 					<form onSubmit={this.submitForm}>
 					<table>
@@ -72,6 +71,7 @@ class Contact extends Component {
 					{fireRedirect && (
 					<Redirect to= '/contact-submit' />
 					)}
+				</div>
 				</div>
 			</div>
 		)
