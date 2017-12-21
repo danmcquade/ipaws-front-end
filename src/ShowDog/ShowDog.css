@@ -78,11 +78,11 @@ button{
   margin-bottom: 20px;
 }
 textarea{
-  text-align: center;
+  text-align: left;
 }
 input[type="text"]{
 	width: 230px;
-	text-align: center;
+	text-align: left;
 	margin-right:  5px;
 	margin-left:  5px;
 }
