@@ -43,14 +43,43 @@
   text-align: left;
 }
 .inquire-form {
-  text-align: left;
+  /* text-align: left;
   margin-right: auto;
-  margin-left: 20px;
+  margin-left: 20px; */
+  display: flex;
+  flex-direction: column;
+
   width: 350px;
 }
 .inquire-form table {
   width: 100%;
+  align-items: center;
 }
 .delete-link a {
   color: red;
+}
+.couple{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+#tbox{
+  height: 70px;
+  width : 300px;
+  border-color: #d6d4d4;
+}
+.comment{
+  text-align: center;
+}
+button{
+  margin-bottom: 20px;
+}
+textarea{
+  text-align: center;
+}
+input[type="text"]{
+	width: 230px;
+	text-align: center;
+	margin-right:  5px;
+	margin-left:  5px;
 }

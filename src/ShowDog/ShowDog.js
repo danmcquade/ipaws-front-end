@@ -106,30 +106,39 @@ class ShowDog extends Component {
             </div>
             <div className='inquire-form'>
               <h3>Inquire About {this.state.dog.name}</h3>
-              <form onSubmit={(e) => this.handleSubmit(e)}>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td><p><label>Your name</label></p>
-                        <p><input type='text' onChange={(e) => this.handleNameInput(e)} placeholder='Name' /></p>
-                      </td>
-                      <td><p><label>Email address</label></p>
+              <form className="dog" onSubmit={(e) => this.handleSubmit(e)}>
+
+                      <div className="couple">
+                      <div>
+                      <p><label>Your name</label></p>
+                        <p><input type='text' onChange={(e) => this.handleNameInput(e)} placeholder='Name'
+                        /></p>
+                        </div>
+                        <div>
+                    <p><label>Email address</label></p>
                         <p><input type='text' onChange={(e) => this.handleEmailInput(e)} placeholder='E-mail' /></p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><p><label>Phone number</label></p>
-                        <p><input type='text' onChange={(e) => this.handlePhoneInput(e)} placeholder='Phone' /></p></td>
-                      <td><p><label>Location</label></p>
-                        <p><input type='text' onChange={(e) => this.handleLocationInput(e)} placeholder='Location' /></p></td>
-                    </tr>
-                    <tr>
-                      <td><p><label>Comment</label></p>
-                        <p><input type='text' onChange={(e) => this.handleCommentInput(e)} placeholder='Comment' /></p></td>
-                      <td><button type='submit'>Inquire</button></td>
-                    </tr>
-                  </tbody>
-                </table>
+                        </div>
+                        </div>
+
+                        <div className="couple">
+                        <div>
+                      <p><label>Phone number</label></p>
+                        <p><input type='text' onChange={(e) => this.handlePhoneInput(e)} placeholder='Phone' /></p>
+                        </div>
+                        <div>
+                      <p><label>Location</label></p>
+                        <p><input type='text' onChange={(e) => this.handleLocationInput(e)} placeholder='Location' /></p>
+                        </div>
+                        </div>
+                    <div className="comment">
+                      <p><label>Comment</label></p>
+                      <div className="couple">
+                        <p><textarea id="xtbox" type='text' onChange={(e) => this.handleCommentInput(e)}  /></p>
+                        </div>
+                        <button type='submit'>Inquire</button>
+                    </div>
+
+
               </form>
             </div>
 
