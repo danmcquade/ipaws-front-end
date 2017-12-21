@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import axios from "axios"
+import React, { Component } from 'react'
+import axios from 'axios'
 import Logo from '../Logo/Logo.js'
-import "./EditDog.css"
+import './EditDog.css'
 
 class EditDog extends Component {
 	constructor(props) {
@@ -9,14 +9,14 @@ class EditDog extends Component {
 		this.state = {
 			dog_id: this.props.match.params.id,
 			dog: {},
-			dog_name: "",
-			dog_photo: "",
-			dog_breed: "",
-			dog_sex: "",
+			dog_name: '',
+			dog_photo: '',
+			dog_breed: '',
+			dog_sex: '',
 			dog_age: 0,
 			dog_weight: 0,
 			dog_spayneuter: false,
-			dog_description: ""
+			dog_description: ''
 		}
 	}
 
@@ -124,13 +124,13 @@ class EditDog extends Component {
 		return (
 			<div>
 				<Logo />
-				<div className="dog-details-container">
-					<div className="dog-details-left">
+				<div className='dog-details-container'>
+					<div className='dog-details-left'>
 						<h1>Editing {this.state.dog.name}</h1>
 						<img src={this.state.dog.photo} alt={this.state.dog.name} />
 					</div>
 					<div>
-						<div className="dog-details-right">
+						<div className='dog-details-right'>
 							<p>
 								<strong>Breed:</strong> {this.state.dog.breed}
 							</p>
@@ -138,15 +138,15 @@ class EditDog extends Component {
 								<strong>Age:</strong> {this.state.dog.age}
 							</p>
 							<p>
-								<strong>Sex:</strong>{" "}
-								{this.state.dog.sex === "M" ? "Male" : "Female"}
+								<strong>Sex:</strong>{' '}
+								{this.state.dog.sex === 'M' ? 'Male' : 'Female'}
 							</p>
 							<p>
 								<strong>Weight:</strong> {this.state.dog.weight}
 							</p>
 							<p>
-								<strong>Spayed/Neutered:</strong>{" "}
-								{this.state.dog.spayneuter ? "Yes" : "No"}
+								<strong>Spayed/Neutered:</strong>{' '}
+								{this.state.dog.spayneuter ? 'Yes' : 'No'}
 							</p>
 							<p>
 								<strong>Description:</strong>
@@ -155,14 +155,14 @@ class EditDog extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="edit-dog-form">
-					<form className="addDog" onSubmit={e => this.handleSubmit(e)}>
-						<div className="couple">
+				<div className='edit-dog-form'>
+					<form className='addDog' onSubmit={e => this.handleSubmit(e)}>
+						<div className='couple'>
 							<div>
 								<label>Name </label>
 								<p>
 									<input
-										type="text"
+										type='text'
 										onChange={e => this.handleNameInput(e)}
 										value={this.state.dog_name}
 									/>
@@ -172,7 +172,7 @@ class EditDog extends Component {
 								<label>Breed </label>
 								<p>
 									<input
-										type="text"
+										type='text'
 										onChange={e => this.handleBreedInput(e)}
 										value={this.state.dog_breed}
 									/>
@@ -180,12 +180,12 @@ class EditDog extends Component {
 							</div>
 						</div>
 
-						<div className="couple">
+						<div className='couple'>
 							<div>
 								<label>Age </label>
 								<p>
 									<input
-										type="text"
+										type='text'
 										onChange={e => this.handleAgeInput(e)}
 										value={this.state.dog_age}
 									/>
@@ -195,25 +195,25 @@ class EditDog extends Component {
 								<label>Sex </label>
 								<p>
 									<input
-										list="sex"
-										type="text"
+										list='sex'
+										type='text'
 										onChange={e => this.handleSexInput(e)}
 										value={this.state.dog_sex}
 									/>
-									<datalist id="sex">
-										<option value="male" />
-										<option value="female" />
+									<datalist id='sex'>
+										<option value='male' />
+										<option value='female' />
 									</datalist>
 								</p>
 							</div>
 						</div>
 
-						<div className="couple">
+						<div className='couple'>
 							<div>
 								<label>Weight </label>
 								<p>
 									<input
-										type="text"
+										type='text'
 										onChange={e => this.handleWeightInput(e)}
 										value={this.state.dog_weight}
 									/>
@@ -223,14 +223,14 @@ class EditDog extends Component {
 								<label>Spayed/Neutered </label>
 								<p>
 									<input
-										list="spayed"
-										type="text"
+										list='spayed'
+										type='text'
 										onChange={e => this.handleFixedInput(e)}
 										value={this.state.dog_spayneuter}
 									/>
-									<datalist id="spayed">
-										<option value="true" />
-										<option value="false" />
+									<datalist id='spayed'>
+										<option value='true' />
+										<option value='false' />
 									</datalist>
 								</p>
 							</div>
@@ -240,8 +240,8 @@ class EditDog extends Component {
 							<label>Photo </label>
 							<p>
 								<input
-									id="photo"
-									type="text"
+									id='photo'
+									type='text'
 									onChange={e => this.handlePhotoInput(e)}
 									value={this.state.dog_photo}
 								/>
@@ -252,16 +252,16 @@ class EditDog extends Component {
 							<label>Description: </label>
 							<p>
 								<textarea
-									type="text"
+									type='text'
 									onChange={e => this.handleDescriptionInput(e)}
 									value={this.state.dog_description}
-									rows="6"
-									column="80"
+									rows='6'
+									column='80'
 								/>
 							</p>
 						</div>
 
-						<input id="bttn" type="submit" />
+						<input id='bttn' type='submit' />
 					</form>
 				</div>
 			</div>
