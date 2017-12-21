@@ -14,7 +14,7 @@ form{
 	text-align: center;
 	font-size: 17px;
 	margin-top: 50px;
-	
+
 
 }
 .content {
@@ -43,4 +43,11 @@ form{
     height: 70px;
     width : 300px;
 		border-color: #d6d4d4;
+}
+
+.contact-intro {
+	max-width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
 }

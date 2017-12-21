@@ -18,8 +18,9 @@ submitForm = (e) => {
 	render() {
 		const fireRedirect = this.state.fireRedirect
 		return (
-			<div className="content">
-				<img class="main-logo" src="/logo.png" alt="iPaws Logo" />
+			<div className="contact-wrapper">
+				<img className="main-logo" src="/logo.png" alt="iPaws Logo" />
+				<div className="contact-intro">
 				<h1>Contact iPaws</h1>
 				<p>
 					iPaws does not run a dedicated facility to house homeless pets. For
@@ -30,7 +31,8 @@ submitForm = (e) => {
 					recommend filling out the contact form if you have interest, you are
 					also welcome to simply come out to an adoption event!{" "}
 				</p>
-
+				</div>
+				<div className="content">
 				<div className="contact-form">
 					<form className="contact" onSubmit={this.submitForm}>
 						<div className="couple">
@@ -75,6 +77,7 @@ submitForm = (e) => {
 						<Redirect to= '/contact-submit' />
 					)}
 				</div>
+			</div>
 			</div>
 		)
 	}
