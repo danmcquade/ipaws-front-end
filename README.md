@@ -13,21 +13,25 @@ iPaws( International Pet Adoption Web Service) is a full-stack application that 
 iPaws allows users to browse a catalogue of dogs available for adoption which are sourced from an API back-end. Using the API to communicate with the back-end, the app gives users the ability to make inquiries about individual dogs, update information about available dogs, create entries for new dogs, and delete existing dogs.
 
 ## Features
-- Main component featuring: nav  and footer components that redirect to resources on the page and social media, slider component displaying relevant content about events, and the preview of dogs gallery.
-- All dogs component featuring pictures and links to individual dog
-- Individual dog component with information about dog and inquiry form
-- Resources and about components with mission statement and relevant additional information with the links
+- Main component featuring: Nav and Footer components that redirect to resources on the page and social media
+- Slider component displaying relevant content about upcoming events, news, and other information.
+- Dogs gallery component featuring pictures and links to individual dogs up for adoption
+- Individual Dog component with detailed information about specific dogs, and featuring an inquiry form
+- Resources and About components with our mission statement, relevant additional information, and links to partner organizations
 
 ## Technologies Used
-iPaws utilized the full MERN (Mongoose, Express, React, Node) stack. The app has a React front-end and an Express/MongoDB back-end. Dependencies used include:
+iPaws utilizes the full MERN (Mongoose, Express, React, Node) stack. The app has a React front-end and an Express/MongoDB back-end. Dependencies used include:
 - axios
 - react-router-dom
 - react-slick (Slider component from (https://github.com/akiran/react-slick))
 - body-parser
+- Heroku for back-end deployment
+- mLab for cloud-based MongoDB
+- Surge.sh for front-end hosting
 
 ## Group Member Roles
 - Dan set up the initial functionality of the app and was involved in development of both the front and back end. He created the logos and image assets used throughout the app.
 - Everett was responsible for gathering and inputing seed data, collection of external resources, development and styling of components, and building the presentation outline.
-- Ante developed and styled components and built out the forms used throughout the app.
+- Ante came up with the idea for the app. He developed and styled many of the components and built out the form functionality used throughout the app.
 
 ### We utilized the 'Feature Branch Workflow' model throughout the development process in order to coordinate our work and individual contributions to the project
